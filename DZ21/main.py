@@ -62,7 +62,7 @@ class Store(Storage):
     @items.setter
     def items(self, new_items):
         self._items = new_items
-        self._capacity -= sum(self._items.values())
+        # self._capacity -= sum(self._items.values())
 
     @property
     def get_unique_items_count(self):
@@ -92,7 +92,7 @@ class Request:
 
 
 def main():
-    while (True):
+    while(True):
         user_input = input("Введите запрос: ")
 
         if user_input == 'stop':
